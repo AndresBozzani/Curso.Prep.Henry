@@ -7,12 +7,10 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y) {
     return x;
-  }
-  if (x < y) {
+  } else if (x < y) {
     return y;
-  } else {
-    return x;
   }
+  return x;
 }
 
 function mayoriaDeEdad(edad) {
@@ -32,10 +30,10 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if (status == 1) {
+  if (status === 1) {
     return "Online";
   }
-  if (status == 2) {
+  if (status === 2) {
     return "Away";
   } else {
     return "Offline";
@@ -49,17 +47,14 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma == "aleman") {
+  if (idioma === "aleman") {
     return "Guten Tag!";
-  }
-  if (idioma == "mandarin") {
+  } else if (idioma === "mandarin") {
     return "Ni Hao!";
-  }
-  if (idioma == "ingles") {
+  } else if (idioma === "ingles") {
     return "Hello!";
-  } else {
-    return "Hola!";
   }
+  return "Hola!";
 }
 
 function colors(color) {
@@ -70,19 +65,22 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  if (color == "blue") {
-    return "This is blue";
-  }
-  if (color == "red") {
-    return "This is red";
-  }
-  if (color == "green") {
-    return "This is green";
-  }
-  if (color == "orange") {
-    return "This is orange";
-  } else {
-    return "Color not found";
+  switch (color) {
+    case "blue":
+      return "This is blue";
+      break;
+    case "red":
+      return "This is red";
+      break;
+    case "green":
+      return "This is green";
+      break;
+    case "orange":
+      return "This is orange";
+      break;
+    default:
+      return "Color not found";
+      break;
   }
 }
 
@@ -90,7 +88,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero == 10 || numero == 5) {
+  if (numero === 10 || numero === 5) {
     return true;
   } else {
     return false;
@@ -116,7 +114,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero - Math.floor(numero) == 0) {
+  if (numero - Math.floor(numero) === 0) {
     return true;
   } else {
     return false;
@@ -128,13 +126,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 3 == 0 && numero % 5 == 0) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
     return "fizzbuzz";
   }
-  if (numero % 3 == 0) {
+  if (numero % 3 === 0) {
     return "fizz";
   }
-  if (numero % 5 == 0) {
+  if (numero % 5 === 0) {
     return "buzz";
   } else {
     return numero;
@@ -148,7 +146,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
-  if (num1 == 0 || num2 == 0 || num3 == 0) {
+  if (num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error";
   }
   if (num1 < 0 || num2 < 0 || num3 < 0) {
@@ -173,9 +171,9 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   a = 0;
   for (i = 1; i <= numero; i++) {
-    if (numero % i == 0) a++;
+    if (numero % i === 0) a++;
   }
-  if (a == 2) {
+  if (a === 2) {
     return true;
   } else {
     return false;
@@ -197,18 +195,17 @@ function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-  var arregloTablaDel6 = []
+  var arregloTablaDel6 = [];
   for (var i = 0; i <= 10; i++) {
-        arregloTablaDel6.push(6 * i)
+    arregloTablaDel6.push(6 * i);
   }
-  return arregloTablaDel6
+  return arregloTablaDel6;
 }
-
 
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero.toString().length == 3) {
+  if (numero.toString().length === 3) {
     return true;
   } else {
     return false;
@@ -222,11 +219,10 @@ function doWhile(numero) {
   let resultado = numero;
   let i = 1;
   do {
-    i++
+    i++;
     resultado = resultado + 5;
-  } while (i<9);
+  } while (i < 9);
   return resultado;
-
 }
 // No modificar nada debajo de esta línea
 // --------------------------------
