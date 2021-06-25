@@ -148,19 +148,14 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
   if (num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error";
-  }
-  if (num1 < 0 || num2 < 0 || num3 < 0) {
+  } else if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
-  }
-  if (num1 > num2 && num1 > num3 && num1 > 0) {
+  } else if (num1 > num2 && num1 > num3 && num1 > 0) {
     return "Número 1 es mayor y positivo";
-  }
-
-  if (num3 > num1 && num3 > num2) {
+  } else if (num3 > num1 && num3 > num2) {
     return num3 + 1;
-  } else {
-    return false;
   }
+  return false;
 }
 
 function esPrimo(numero) {
@@ -175,9 +170,8 @@ function esPrimo(numero) {
   }
   if (a === 2) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 function esVerdadero(valor) {
@@ -186,9 +180,8 @@ function esVerdadero(valor) {
   //Escribe tu código aquí
   if (valor) {
     return "Soy verdadero";
-  } else {
-    return "Soy falso";
   }
+  return "Soy falso";
 }
 
 function tablaDelSeis() {
@@ -207,9 +200,8 @@ function tieneTresDigitos(numero) {
   //Escribe tu código aquí
   if (numero.toString().length === 3) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 function doWhile(numero) {
