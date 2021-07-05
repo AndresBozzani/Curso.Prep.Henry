@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(255, 253, 240);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: indigo;
+}
+h3 {
+  color: mediumblue;
+}
+h4 {
+  font-style: initial;
+}
+div {
+  border-bottom: black solid;
+}
+img {
+  width: 20%;
+  margin: 5px;
+  padding-right: 5px;
+}
