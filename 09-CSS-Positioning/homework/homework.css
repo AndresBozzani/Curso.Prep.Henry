@@ -7,53 +7,53 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
-
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
-#ejercicioDos{
-    display: none;
+#ejercicioDos {
+  display: none;
 }
-
-
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
-#ejercicioTres{
-    position: none;
-    margin-top: 100px;
-    margin-left: 200px;
+#ejercicioTres {
+  position: none;
+  margin-top: 100px;
+  margin-left: 200px;
 }
-
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-#ejercicioCuatro{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    padding-top: 10px;    
+#ejercicioCuatro {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding-top: 10px;
 }
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-#ejercicioCinco{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#ejercicioCinco {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-/* Ejercicio 6. */
-.elementos{
-display: flex;
-justify-content: space-around;
-align-items: flex-end;
+/* Ejercicio 6.*/
+#ejercicioCinco {
+  flex-direction: row-reverse;
+}
+/* Ejercicio 7.*/
+#ejercicioSiete {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
